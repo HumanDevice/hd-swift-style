@@ -69,14 +69,13 @@ For UIViewControllers, code organization goes as follows:
 Use `self` keyword only when it's necessary (ex. closuers or `init` methods).
 
 ##`If` statements
-Don't use `()` while writing `if` statements, unless it makes code more readable. Put `else` in new line.
+Don't use `()` while writing `if` statements, unless it makes code more readable. Put `else` in `if` closing line.
 
 **Example**
 ```swift
 if yomama.weight > 200 {
   yomama.fat()
-}
-else {
+} else {
   me.needsBetterJoke()
 }
 ```
