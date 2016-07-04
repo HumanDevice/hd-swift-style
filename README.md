@@ -59,11 +59,14 @@ For UIViewControllers, code organization goes as follows:
   * IBOutlets
   * private class variables
   * UIViewController lifecycle methods
-  * functions supporting lifecycle methods
   * IBActions
-  * static and public functions
+  * public functions
+  * static functions
 * protocol implementation methods (in `extension`s)
 * class extensions, `==` implementations, etc.
+Private supporting functions come below functions they support (lifecycle, public methods, etc).
+
+For **Model**, **API** and **Utils** classes `static` and `public` functions come first, and supporting private functions are below them.
 
 ##Use of `self`
 Use `self` keyword only when it's necessary (ex. closuers or `init` methods).
