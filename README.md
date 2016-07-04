@@ -69,7 +69,7 @@ Private supporting functions come below functions they support (lifecycle, publi
 For **Model**, **API** and **Utils** classes `static` and `public` functions come first, and supporting private functions are below them.
 
 ##Use of `self`
-Use `self` keyword only when it's necessary (ex. closuers or `init` methods).
+Use `self` keyword only when it's necessary (ex. closures or `init` methods).
 
 ##`If` statements
 Don't use `()` while writing `if` statements, unless it makes code more readable. Put `else` in `if` closing line.
