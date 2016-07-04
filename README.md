@@ -98,6 +98,37 @@ if let name = object.name {
 }
 ```
 
+In case of enumeration, use `switch` statements over `if` statements.
+
+**Bad**
+```swift
+if manager.isReachable {
+ NetworkReachabilityManager.NetworkReachabilityStatus.NotReachable
+ if NetworkReachabilityManager.NetworkReachabilityStatus.Reachable(.EthernetOrWiFi) == status {
+  print("WiFi")
+ } else if NetworkReachabilityManager.NetworkReachabilityStatus.Reachable(.WWAN) == status {
+  print("WWAN")
+ }
+} else {
+ print("No connection")
+}
+
+```
+
+**Good**
+```swift
+switch status {
+ case NetworkReachabilityManager.NetworkReachabilityStatus.NotReachable:
+  print("No connection")
+ case NetworkReachabilityManager.NetworkReachabilityStatus.Unknown:
+  print("Unknown")
+ case NetworkReachabilityManager.NetworkReachabilityStatus.Reachable(.EthernetOrWiFi):
+  print("WiFi")
+ case NetworkReachabilityManager.NetworkReachabilityStatus.Reachable(.WWAN):
+  print("WWAN")
+}
+```
+
 ##Closure Expressions
 Use trailing closure syntax only if there's a single closure expression parameter at the end of the argument list. Start closure code in the new line.
 
