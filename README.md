@@ -9,6 +9,7 @@
 * [Use of `self`](#use-of-self)
 * [`If` statements](#if-statements)
 * [Closure Expressions](#closure-expressions)
+* [Color constants](#color-constants)
 
 ##Application architecture
 Every iOS application has the same base structure:
@@ -137,5 +138,15 @@ Use trailing closure syntax only if there's a single closure expression paramete
 ImageAPI.downloadPictureForStore(superStore) {
   image in
   imageView.image = image
+}
+```
+
+##Color constants
+Colors used in whole project are kept in `ColorConstants` class.
+
+**Example**
+```swift
+class ColorConstants {
+  static let Gray = UIColor.init(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
 }
 ```
