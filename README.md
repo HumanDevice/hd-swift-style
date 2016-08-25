@@ -83,7 +83,7 @@ if yomama.weight > 200 {
   me.needsBetterJoke()
 }
 ```
-When it's appropriate, make use if `if let`.
+When it's appropriate, make use of `if let` and `where`.
 
 **Bad**
 ```swift
@@ -92,9 +92,18 @@ if object.name != nil {
 }
 ```
 
+**Terrible**
+```swift
+if object.name != nil {
+  if object.name! != "potato" {
+   otherObject.existingName = object.name!
+  }
+}
+```
+
 **Good**
 ```swift
-if let name = object.name {
+if let name = object.name where name != "potato" {
   otherObject.existingName = name
 }
 ```
