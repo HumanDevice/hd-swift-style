@@ -25,7 +25,7 @@ Example:
 
 ### Code review
 Upon finishing your changes, you should inform everyone and request a code review. Reviewer can be assigned or volounteer if they have no other tickets at the moment. Branch designed for code review should be updated with ``master``, with all conflicts resolved.
-During code review you should make sure code is readable and follows [Swift Guidelines](/Style). After review, if the solution got accepted, reviewer should merge reviewed branch into master and delete it afterwards.
+During code review you should make sure code is readable and follows [Swift Guidelines](/Style). After review, if the solution got accepted, reviewer should merge reviewed branch into master and **delete it afterwards**.
 
 ### Merge and rebase
 While developing on your own branch, you should make sure it's up to date with master. Updates can be handled by ``merge`` or ``rebase`` commands.
