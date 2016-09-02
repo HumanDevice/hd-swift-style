@@ -1,1 +1,4 @@
-# iOS Development guidelines in Human Device
+# HD - iOS Development guidelines
+
+[Coding style](Style/)
+[VCS usage](Git/)
