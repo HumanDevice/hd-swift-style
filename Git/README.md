@@ -31,3 +31,30 @@ During code review you should make sure code is readable and follows [Swift Guid
 While developing on your own branch, you should make sure it's up to date with master. Updates can be handled by ``merge`` or ``rebase`` commands.
 
 Rebase helps keep cleaner history, but it can be used only for local branches that haven't been pushed yet. In other instances, you have to use ``merge`` command.
+
+### Commit messages
+Commit messages should be written in English and start with capital letter. Verbs have to be in simple form (ex. fix, add, apply, change).
+If commit needs context, it should be added in new paragraph.
+If a single commit fixes bug from project.coop, ticket number should be referenced.
+Emojis are encouraged if they fit the context.
+
+**Bad commits**
+```
+wakacje 🏖
+------------------------------------------------------------
+home
+------------------------------------------------------------
+transition fixed cd
+```
+
+**Good commits**
+```
+Add tests for new API solution
+------------------------------------------------------------
+Update DAO with BaseReport requests
+------------------------------------------------------------
+Fix #24
+Refactor DetailsViewController
+------------------------------------------------------------
+Implement @IBActions for CreditCardViewController 💳
+```
