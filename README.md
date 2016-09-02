@@ -1,5 +1,4 @@
 # HD - iOS Development guidelines
 
-[Coding style](Style/)
-
-[VCS usage](Git/)
+* [Coding style](Style/)
+* [VCS usage](Git/)
